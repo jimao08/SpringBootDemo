@@ -8,12 +8,14 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "app_user")
 public class AppUser {
 
     @Id
